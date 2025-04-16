@@ -10,7 +10,7 @@ type Props = {
   size?: ActivityIndicatorProps["size"];
 };
 
-export const AppLoader = ({ visible, size = "small" }: Props) => {
+export const AppLoader = ({ visible, size = "large" }: Props) => {
   return (
     <ActivityIndicator animating={visible} color={"#3B82F6"} size={size} />
   );
