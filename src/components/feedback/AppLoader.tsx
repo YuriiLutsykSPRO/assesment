@@ -7,7 +7,7 @@ import {
 type Props = {
   visible: boolean;
   color?: ColorValue;
-  size: ActivityIndicatorProps["size"];
+  size?: ActivityIndicatorProps["size"];
 };
 
 export const AppLoader = ({ visible, size = "small" }: Props) => {
