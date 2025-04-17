@@ -39,7 +39,7 @@ export const AppList = forwardRef<any, Props<any>>(
         ListFooterComponent={
           withFooter ? (
             <View style={styles.footer}>
-              <AppLoader visible={!!nextPageLoading} />
+              <AppLoader visible={Boolean(nextPageLoading)} />
             </View>
           ) : undefined
         }

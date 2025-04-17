@@ -18,6 +18,8 @@ type Props = {
   text: string | undefined | string[];
 } & Partial<SnackBarOptions>;
 
+export const INDEFINITE_SNSCKBAR = Snackbar.LENGTH_INDEFINITE;
+
 export const AppSnackbar = {
   show({ type, text, ...props }: Props) {
     const parsedText = Array.isArray(text) ? text.join("\n") : text;
